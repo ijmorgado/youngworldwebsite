@@ -1,0 +1,50 @@
+﻿@model MundoJoven.Models.Note
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Note</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Contents)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Contents)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.date_creation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.date_creation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.date_publish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.date_publish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.active)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.active)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

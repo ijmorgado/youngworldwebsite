@@ -1,0 +1,66 @@
+﻿@model MundoJoven.Models.Note
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Note</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Contents)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Contents)
+            @Html.ValidationMessageFor(model => model.Contents)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.date_creation)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.date_creation)
+            @Html.ValidationMessageFor(model => model.date_creation)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.date_publish)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.date_publish)
+            @Html.ValidationMessageFor(model => model.date_publish)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.active)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.active)
+            @Html.ValidationMessageFor(model => model.active)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
