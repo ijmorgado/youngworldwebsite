@@ -204,6 +204,7 @@
     <Content Include="Content\themes\font\fontawesome-webfont.svg" />
     <Content Include="Content\themes\font\fontawesome-webfont.ttf" />
     <Content Include="Content\themes\font\fontawesome-webfont.woff" />
+    <Content Include="Images\static\favicon.png" />
     <Content Include="Images\static\user.png" />
     <Content Include="Scripts\ace-elements.min.js" />
     <Content Include="Scripts\ace.min.js" />
