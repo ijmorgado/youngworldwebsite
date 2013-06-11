@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="joven" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\hacker\\documents\\visual\ studio\ 2012\\Projects\\MundoJoven\\MundoJoven\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\hacker\\documents\\visual\ studio\ 2012\\Projects\\MundoJoven\\MundoJoven\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:e91k20in8a.database.windows.net;Initial Catalog=master;Persist Security Info=True;User ID=mjadmin@e91k20in8a;Password=t568At568B" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hacker\\documents\\visual\ studio\ 2012\\Projects\\MundoJoven\\MundoJoven\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MundoJoven.Models.NoteDBContext-Web.config Connection String" description="" value="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Notes.mdf;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hacker\\documents\\visual\ studio\ 2012\\Projects\\MundoJoven\\MundoJoven\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MundoJoven.Models.NoteDBContext']/@connectionString" />
+  </parameter>
+</parameters>
